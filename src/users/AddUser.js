@@ -19,7 +19,8 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/user", user);
+    //await axios.post("http://localhost:8080/user", user);
+    await axios.post("https://userhub-backend.onrender.com", user);
     navigate("/");
   };
 
