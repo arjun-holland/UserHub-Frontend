@@ -25,7 +25,8 @@ export default function EditUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();    // ⛔ Stops page from reloading
-    await axios.put(`http://localhost:8080/user/${id}`, user);   // ✅ Send updated user data to backend
+   // await axios.put(`http://localhost:8080/user/${id}`, user);   // ✅ Send updated user data to backend
+     await axios.put(`https://userhub-backend.onrender.com/user/${id}`, user);
     navigate("/");     // 🔁 After success, go back to homepage
   };
 
