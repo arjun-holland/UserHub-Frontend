@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:8080/user/${id}`);
+   // await axios.delete(`http://localhost:8080/user/${id}`);
     await axios.delete(`https://userhub-backend.onrender.com/user/${id}`);
     loadUsers();
   };
